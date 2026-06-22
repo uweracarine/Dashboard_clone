@@ -1,0 +1,118 @@
+const now = Date.now()
+const mins = (n) => now - n * 60 * 1000
+const hrs = (n) => now - n * 60 * 60 * 1000
+const days = (n) => now - n * 24 * 60 * 60 * 1000
+
+// YouTube video IDs used only for thumbnails (img.youtube.com) — no autoplay, no embed
+const videos = [
+  {
+    id: 1,
+    name: 'Big Buck Bunny.mp4',
+    youtubeId: 'YE7VzlLtp-4',
+    duration: '9:56',
+    createdAt: days(20),
+    lastOpenedAt: mins(8),
+    size: '148 MB',
+  },
+  {
+    id: 2,
+    name: 'Elephant Dream.mp4',
+    youtubeId: 'aqz-KE-bpKQ',
+    duration: '10:54',
+    createdAt: days(18),
+    lastOpenedAt: hrs(2),
+    size: '112 MB',
+  },
+  {
+    id: 3,
+    name: 'For Bigger Blazes.mp4',
+    youtubeId: 'Dr9C2oswZfA',
+    duration: '0:15',
+    createdAt: days(15),
+    lastOpenedAt: hrs(5),
+    size: '8 MB',
+  },
+  {
+    id: 4,
+    name: 'Subaru Outback Ad.mp4',
+    youtubeId: 'k4OSqCOReYA',
+    duration: '0:31',
+    createdAt: days(12),
+    lastOpenedAt: hrs(10),
+    size: '15 MB',
+  },
+  {
+    id: 5,
+    name: 'Nature Documentary.mp4',
+    youtubeId: 'wvh1qZNGEKg',
+    duration: '3:21',
+    createdAt: days(10),
+    lastOpenedAt: days(1),
+    size: '62 MB',
+  },
+  {
+    id: 6,
+    name: 'Tears of Steel.mp4',
+    youtubeId: 'R6MlUcmOul8',
+    duration: '12:14',
+    createdAt: days(8),
+    lastOpenedAt: days(2),
+    size: '203 MB',
+  },
+  {
+    id: 7,
+    name: 'Cosmos Laundromat.mp4',
+    youtubeId: 'Y-rmzh0PI3c',
+    duration: '12:10',
+    createdAt: days(6),
+    lastOpenedAt: days(3),
+    size: '198 MB',
+  },
+  {
+    id: 8,
+    name: 'Caminandes Llama Drama.mp4',
+    youtubeId: 'nBys4UQFR9o',
+    duration: '2:30',
+    createdAt: days(4),
+    lastOpenedAt: days(5),
+    size: '44 MB',
+  },
+  {
+    id: 9,
+    name: 'Glass Half.mp4',
+    youtubeId: 'eRsGyueVLvQ',
+    duration: '3:00',
+    createdAt: days(3),
+    lastOpenedAt: days(6),
+    size: '51 MB',
+  },
+  {
+    id: 10,
+    name: 'Agent 327.mp4',
+    youtubeId: 'mN0zPOpADL4',
+    duration: '3:51',
+    createdAt: days(2),
+    lastOpenedAt: days(8),
+    size: '67 MB',
+  },
+  {
+    id: 11,
+    name: 'Spring Festival Reel.mp4',
+    youtubeId: '2lAe1cqCOXo',
+    duration: '4:05',
+    createdAt: days(1),
+    lastOpenedAt: days(10),
+    size: '73 MB',
+  },
+  {
+    id: 12,
+    name: 'City Timelapse.mp4',
+    youtubeId: 'ZSt9tm3RoUU',
+    duration: '5:11',
+    createdAt: days(1),
+    lastOpenedAt: days(12),
+    size: '95 MB',
+  },
+]
+
+export default videos
